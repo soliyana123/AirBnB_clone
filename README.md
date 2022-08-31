@@ -121,7 +121,7 @@ PROMPT~>
 
 **Authors**
 
-- [asefu kassaw](https://github.com/soliyana123)
+- @github [asefu kassaw](https://github.com/soliyana123)
 
 
 
