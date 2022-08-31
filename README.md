@@ -28,7 +28,7 @@ The console will be a tool to validate this storage engine
 ![airbnbclone](https://user-images.githubusercontent.com/59724074/187630820-493cda30-d1e3-418d-9e1b-374b453965b0.jpg)
 
 ### Requirements
-** Python Scripts **
+**Python Scripts**
 - Allowed editors: `vi`, `vim`, `emacs`
 - All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
 - All your files should end with a new line
@@ -41,4 +41,88 @@ The console will be a tool to validate this storage engine
 - All your classes should have a documentation `(python3 -c 'print(__import__("my_module").MyClass.__doc__)')`
 - All your functions (inside and outside a class) should have a documentation `(python3 -c 'print(__import__("my_module").my_function.__doc__)'` and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`)
 - A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
+
+
+**Python Unit Tests**
+- Allowed editors: `vi`, `vim`, `emacs`
+- All your files should end with a new line
+- All your test files should be inside a folder `tests`
+- You have to use the [unittest module](https://docs.python.org/3.4/library/unittest.html#module-unittest)
+- All your test files should be python files (extension: `.py`)
+- All your test files and folders should start by `test_`
+- Your file organization in the tests folder should be the same as your project
+- e.g., For `models/base_model.py`, unit tests must be in: `tests/test_models/test_base_model.py`
+- e.g., For `models/user.py`, unit tests must be in: `tests/test_models/test_user.py`
+- All your tests should be executed by using this command: `python3 -m unittest discover tests`
+- You can also test file by file by using this command: `python3 -m unittest tests/test_models/test_base_model.py`
+- All your modules should have a documentation `(python3 -c 'print(__import__("my_module").__doc__)')`
+- All your classes should have a documentation `(python3 -c 'print(__import__("my_module").MyClass.__doc__)')`
+- All your functions (inside and outside a class) should have a documentation `(python3 -c 'print(__import__("my_module").my_function.__doc__)'` and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`)
+
+#### Files and Directories
+-  `models` directory will contain all classes used for the entire project. A class, called “model” in a OOP project is the representation of an object/instance.
+- `tests` directory will contain all unit tests.
+- `console.py` file is the entry point of our command interpreter.
+- `models/base_model.py` file is the base class of all our models. It contains common elements:
+   - attributes: `id`, `created_at` and `updated_at`
+   - methods: `save()` and `to_json()`
+- `models/engine` directory will contain all storage classes (using the same prototype). For the moment you will have only one: `file_storage.py`.
+
+##### Usage of Command interpreter
+**interactive mode:**
+
+```
+PROMPT~> ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb)
+(hbnb) help quit
+Quit command to exit the program
+
+(hbnb)
+(hbnb)
+(hbnb) quit
+PROMPT~>
+```
+
+**Non-interactive mode**
+
+```
+PROMPT~> echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+PROMPT~>
+PROMPT~> cat test_help
+help
+PROMPT~>
+PROMPT~> cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+PROMPT~>
+```
+
+#######installation
+
+- git clone
+- AirBnB_clone
+- ./console.py
+
+####### Authors
+
+@github/soliyana123
+
+
+
 
