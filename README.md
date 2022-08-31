@@ -15,7 +15,7 @@ we won’t build this application all at once, but step by step.
 
 Each step will link to a concept. this specfic Repositoray:
 
-** The Console **
+**The Console**
 - create your data model
 - manage (create, update, destroy, etc) objects via a console / command interpreter
 - store and persist objects to a file (JSON file)
