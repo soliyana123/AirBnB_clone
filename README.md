@@ -113,13 +113,13 @@ EOF  help  quit
 PROMPT~>
 ```
 
-#######installation
+###### Installation
 
 - git clone
 - AirBnB_clone
 - ./console.py
 
-####### Authors
+**Authors**
 
 @github/soliyana123
 
