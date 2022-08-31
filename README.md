@@ -120,8 +120,7 @@ PROMPT~>
 - ./console.py
 
 **Authors**
-
-@github/soliyana123
+[asefu kassaw](https://github.com/soliyana123)
 
 
 
